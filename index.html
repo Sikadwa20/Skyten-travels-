@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skyten Travels - Your gateway to unforgettable travel experiences. Explore exotic destinations and create lasting memories.">
+    <meta name="keywords" content="travel, tours, destinations, vacations, adventure">
+    <title>Skyten Travels - Unforgettable Travel Experiences</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-plane"></i>
+                    <span>Skyten Travels</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explore the World with Skyten Travels</h1>
+            <p>Discover extraordinary destinations and create unforgettable memories</p>
+            <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                Plan Your Journey
+            </button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2 class="section-title">Featured Destinations</h2>
+            <p class="section-subtitle">Explore some of our most popular travel packages</p>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="destination-info">
+                        <h3>European Escape</h3>
+                        <p>Experience the charm of Paris, Rome, and Barcelona</p>
+                        <div class="destination-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> 10 Days</span>
+                            <span class="price">From $2,499</span>
+                        </div>
+                        <button class="learn-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="destination-info">
+                        <h3>Asian Adventure</h3>
+                        <p>Dive into the culture and beauty of Southeast Asia</p>
+                        <div class="destination-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> 14 Days</span>
+                            <span class="price">From $1,899</span>
+                        </div>
+                        <button class="learn-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="destination-info">
+                        <h3>Caribbean Paradise</h3>
+                        <p>Relax on pristine beaches and crystal-clear waters</p>
+                        <div class="destination-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> 7 Days</span>
+                            <span class="price">From $1,599</span>
+                        </div>
+                        <button class="learn-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="destination-info">
+                        <h3>African Safari</h3>
+                        <p>Witness the majesty of African wildlife and landscapes</p>
+                        <div class="destination-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> 12 Days</span>
+                            <span class="price">From $2,799</span>
+                        </div>
+                        <button class="learn-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                    <div class="destination-info">
+                        <h3>South America Wonders</h3>
+                        <p>Explore Machu Picchu, Amazon, and Rio de Janeiro</p>
+                        <div class="destination-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> 15 Days</span>
+                            <span class="price">From $2,199</span>
+                        </div>
+                        <button class="learn-btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="destination-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="destination-info">
+                        <h3>Middle East Mystique</h3>
+                        <p>Discover ancient wonders and vibrant bazaars</p>
+                        <div class="destination-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> 9 Days</span>
+                            <span class="price">From $1,699</span>
+                        </div>
+                        <button class="learn-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive travel solutions tailored to your needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-suitcase-rolling"></i>
+                    </div>
+                    <h3>Customized Tours</h3>
+                    <p>Personalized itineraries designed specifically for you and your travel preferences</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Hotel & Accommodation</h3>
+                    <p>Premium accommodations ranging from luxury resorts to boutique hotels</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h3>Flight Bookings</h3>
+                    <p>Competitive flight deals and seamless booking experience worldwide</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Visa Assistance</h3>
+                    <p>Expert guidance and support with visa requirements and documentation</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Travel Insurance</h3>
+                    <p>Comprehensive coverage for peace of mind during your travels</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support whenever you need assistance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Skyten Travels</h2>
+                    <p>At Skyten Travels, we believe that travel is more than just visiting new places – it's about creating lifelong memories and meaningful connections with the world around us.</p>
+                    <p>With over a decade of experience in the travel industry, our team of expert travel consultants is dedicated to crafting exceptional journeys that exceed expectations. We specialize in designing customized travel experiences for individuals, families, and corporate groups.</p>
+                    <p>Our commitment to excellence, attention to detail, and passion for exploration make us your ideal travel partner for any destination around the globe.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>5000+</h4>
+                            <p>Happy Travelers</p>
+                        </div>
+                        <div class="stat">
+                            <h4>150+</h4>
+                            <p>Destinations</p>
+                        </div>
+                        <div class="stat">
+                            <h4>10+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Real experiences from our valued travelers</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Skyten Travels made our honeymoon absolutely magical. Every detail was perfectly planned!"</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah & John</strong>
+                        <span>Europe Tour</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Professional service, competitive prices, and unforgettable experiences. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong>
+                        <span>Asian Adventure</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The team went above and beyond to customize our family trip. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <strong>Emma Rodriguez</strong>
+                        <span>Caribbean Getaway</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start your adventure? Contact us today</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>123 Travel Street<br>Adventure City, AC 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@skytentravels.com">info@skytentravels.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM<br>Sun: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/skytentravels/" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Interested Destination</label>
+                        <select id="destination" name="destination">
+                            <option value="">-- Select a Destination --</option>
+                            <option value="europe">European Escape</option>
+                            <option value="asia">Asian Adventure</option>
+                            <option value="caribbean">Caribbean Paradise</option>
+                            <option value="africa">African Safari</option>
+                            <option value="southamerica">South America Wonders</option>
+                            <option value="middleeast">Middle East Mystique</option>
+                            <option value="custom">Custom Itinerary</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Skyten Travels</h4>
+                    <p>Discover the world with us and create memories that last a lifetime.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="tel:+1234567890">+1 (234) 567-8900</a></li>
+                        <li><a href="mailto:info@skytentravels.com">info@skytentravels.com</a></li>
+                        <li>123 Travel Street, Adventure City</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/skytentravels/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Skyten Travels. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
